@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Foldit:wght@100..900&family=Gochi+Hand&family=Great+Vibes&display=swap');
+
+body {
+    background-image: url('https://i.pinimg.com/474x/7d/43/91/7d439133b9276e75c8334af1f6c17b8e.jpg');
+    font-family: "Castoro", serif;
+    background-repeat: repeat;
+    font-weight: 400;
+    font-style: italic;
+}
+.res-title{
+    font-family: "Great Vibes";
+  font-weight: 600;
+  font-style: normal;
+  font-size: x-large;
+}
+
+.res-text {
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.optbtn {
+    --b: 3px;
+    --s: .45em;
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #3f3d3d00 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #3f3b3b00;
+    outline-offset: .6em;
+    font-size: 16px;
+    border: none;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.optbtn:hover,
+.optbtn:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.optbtn:active {
+    background: var(--color);
+    color: #fff;
+}
