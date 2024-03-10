@@ -37,7 +37,7 @@ function Quiz() {
 
     return (
         <div className="container d-flex justify-content-center align-items-center">
-            <div style={{ height: '100%', width: '50%' }} className="bg-light border shadow m-5 p-3">
+            <div style={{ height: '100%', width: '90%' }} className="bg-light border shadow m-5 p-3">
                 {showResult ? (
                     <Result score={score} />
                 ) : (
